@@ -1,0 +1,73 @@
+<div class="row  margens" style="margin-top:40px; ">
+  
+    <h4 class="titleHeader">Dashboard</h4>
+  
+  <div class="col m4 s12" style="min-height: 100px; margin-top:40px;">
+    <div class="col m12 s12 white mat-elevation-z4" style="border-radius:4px;">
+      <div class="col m4 s4 mat-elevation-z8 "
+        style="margin-top:-20px; border-radius:4px; background: linear-gradient(60deg,#26c6da,#00acc1)">
+        <p class="center white-text">
+          <i class="fa fa-id-card fa-2x"></i>
+        </p>
+      </div>
+      <div class="col m8 s8">
+        <h6 class="grey-text" style="text-align:right; margin-bottom:2px">Total de Usuários</h6>
+        <h5 class="value" *ngIf="totalUser; else load1">{{ totalUser }}</h5>
+        <ng-template #load1>
+          <i class="small material-icons right">refresh</i>
+        </ng-template>
+      </div>
+      <div class="col m12 s12" style="border-top:1px solid #d3d3d3;">
+        <p class="center" style="margin-top:2px; margin-bottom: 2px">
+          <i class="blue-text fa fa-id-card"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col m4 s12" style="min-height: 100px; margin-top:40px;">
+    <div class="col m12 s12 white mat-elevation-z4" style="border-radius:4px;">
+      <div class="col m4 s4 mat-elevation-z8 "
+        style="margin-top:-20px; border-radius:4px; background: linear-gradient(60deg,#66bb6a,#43a047)">
+        <p class="center white-text">
+          <i class="fa fa-shopping-basket fa-2x"></i>
+        </p>
+      </div>
+      <div class="col m8 s8">
+        <h6 class="grey-text" style="text-align:right; margin-bottom:2px">Lojas Ativas</h6>
+        <h5 class="value" *ngIf="activeStore; else load2">{{ activeStore }} </h5>
+        <ng-template #load2>
+          <i class="small material-icons right">refresh</i>
+        </ng-template>
+      </div>
+      <div class="col m12 s12" style="border-top:1px solid #d3d3d3;">
+        <p class="center" style="margin-top:2px; margin-bottom: 2px">
+          <i class="green-text fa fa-shopping-basket"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col m4 s12 widthfix" style="min-height: 100px; margin-top:40px;">
+    <div class="col m12 s12 white mat-elevation-z4" style="border-radius:4px;">
+      <div class="col m4 s4 mat-elevation-z8 "
+        style="margin-top:-20px; border-radius:4px; background: linear-gradient(60deg,#ffa726,#fb8c00)">
+        <p class="center white-text">
+          <i class="fa fa-clone fa-2x"></i>
+        </p>
+      </div>
+      <div class="col m8 s8">
+        <h6 class="grey-text" style="text-align:right; margin-bottom:2px">Produtos Ativos</h6>
+        <h5 class="value" *ngIf="activeProducts; else load3">{{ activeProducts }}</h5>
+        <ng-template #load3>
+          <i class="small material-icons right">refresh</i>
+        </ng-template>
+      </div>
+      <div class="col m12 s12" style="border-top:1px solid #d3d3d3;">
+        <p class="center" style="margin-top:2px; margin-bottom: 2px">
+          <i class="orange-text fa fa-clone"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="margens">
+    <div class="row">
+        <div class="col s1 m1 l1">
+            <button class="margin-1rem" [routerLink]="['/stores']" mat-stroked-button>Voltar</button>
+        </div>
+        <div class="col s11 m11 l11">
+            <h4 class="titleHeader">Lista de Produtos</h4>
+        </div>
+    </div>
+    <div class="margin-1rem">
+        <pl-products [products]="products"></pl-products>
+    </div>
+</div>

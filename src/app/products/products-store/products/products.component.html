@@ -1,0 +1,9 @@
+<p class="text-center text-muted" *ngIf="!products.length" style="padding-left: 1rem;">
+    <mat-card>
+        Desculpe, Loja sem produtos!
+    </mat-card>
+</p>
+<div *ngFor="let product of products">
+    <pl-card-product [product]="product">
+    </pl-card-product>
+</div>

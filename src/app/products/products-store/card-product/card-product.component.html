@@ -1,0 +1,11 @@
+<mat-card tabindex="0">
+    <mat-card-header>
+        <mat-card-title>{{product.name}}</mat-card-title>
+        <mat-card-subtitle>{{product.storePlanRefId}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Descrição: {{ product.description }}</p>
+    </mat-card-content>
+    <h5>Preço: {{ product.price | currency:'R$':'symbol':'0.2-2':'pt' }}</h5>
+
+</mat-card>

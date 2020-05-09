@@ -1,0 +1,6 @@
+<p class="text-center text-muted" *ngIf="!stores.length">
+  Desculpe, sem Lojas!
+</p>
+<div *ngFor="let store of stores">
+  <pl-card-store [store]="store"></pl-card-store>
+</div>

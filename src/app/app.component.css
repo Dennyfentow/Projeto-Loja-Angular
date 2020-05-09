@@ -1,0 +1,24 @@
+/* Margem ao lado devido o sidenav */
+@media only screen and (min-width: 960px) {
+  ::ng-deep .margens {
+    margin-left: 180px;
+    margin-right: 1rem;
+  }
+
+  ::ng-deep .titleHeader {
+    margin-top: -63px;
+    margin-left: 180px;
+    margin-right: 180px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  ::ng-deep .titleHeader {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+}

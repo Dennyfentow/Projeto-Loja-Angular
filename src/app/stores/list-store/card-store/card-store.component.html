@@ -1,0 +1,14 @@
+<mat-card tabindex="0" mouseEnderHover (click)="loadProdutsStore(store)">
+    <mat-card-header>
+        <img mat-card-avatar [src]="store.logo" *ngIf="store.logo; else imageElse" />
+
+        <ng-template #imageElse>
+            <div mat-card-avatar class="header-store-avatar"></div>
+        </ng-template>
+
+        <mat-card-title>{{ store.name }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+        <button (click)="loadDetailsStore(store, $event)" mat-button>Detalhes</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,21 @@
+export interface Store {
+    id: number,
+    ident: string,
+    docRef: string,
+    name: string,
+    logo: string,
+    created: string,
+    isLegalPerson: boolean,
+    cnpj: string,
+    cpf: string,
+    cep: string,
+    stars: number,
+    customerRefId: string,
+    addressCityName: string,
+    addressCityCode: number,
+    latitude: number,
+    longitude: number,
+    status: string,
+    lastSyncDate: string,
+    customerId: number
+}

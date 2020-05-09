@@ -1,0 +1,10 @@
+{
+    "/api": {
+        "target": "https://goanalytics.executeti.com.br/api",
+        "pathRewrite": {
+            "^/api": ""
+        },
+        "secure": false,
+        "changeOrigin": true
+    }
+}

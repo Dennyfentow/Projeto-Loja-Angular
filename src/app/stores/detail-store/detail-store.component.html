@@ -1,0 +1,21 @@
+<mat-card class="detail-card margens">
+    <mat-card-actions>
+        <button [routerLink]="['/stores']" mat-stroked-button>VOLTAR</button>
+    </mat-card-actions>
+    <mat-card-header>
+        <img mat-card-avatar [src]="store.logo" [alt]="store.name" onError="this.src = 'assets/svg/loja-generica.svg'">
+
+        <mat-card-title>{{ store.name }}</mat-card-title>
+        <mat-card-subtitle> {{ store.status }} </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="store.logo" [alt]="store.name" onError="this.src = 'assets/svg/loja-generica.svg'">
+
+    <mat-card-content>
+        <p>CEP: {{ store.cep }}</p> 
+        <p>CPF: {{ store.cpf }}</p> 
+        <p>CRIADO DIA: {{ store.created }}</p>
+        <p>Latitude: {{ store.latitude }}</p>
+        <p>Longitude: {{ store.longitude }}</p>
+        <p>Estrelas: {{ store.stars }} </p>
+    </mat-card-content>
+</mat-card>
