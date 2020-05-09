@@ -15,7 +15,6 @@ export class ProductsStoreComponent implements OnInit {
 
   ngOnInit(): void {
     this.products = this.activatedRoute.snapshot.data.products;
-    console.log(this.products);
   }
 
 }
